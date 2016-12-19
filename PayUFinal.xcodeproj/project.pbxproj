@@ -14,6 +14,9 @@
 		8B056D691E07A43E00669047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B056D671E07A43E00669047 /* LaunchScreen.storyboard */; };
 		8B056D741E07A43E00669047 /* PayUFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B056D731E07A43E00669047 /* PayUFinalTests.swift */; };
 		8B056D7F1E07A43E00669047 /* PayUFinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B056D7E1E07A43E00669047 /* PayUFinalUITests.swift */; };
+		8B056DBC1E07A8CB00669047 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B056DB81E07A8AB00669047 /* CryptoSwift.framework */; };
+		8B056DBD1E07A8CB00669047 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B056DB81E07A8AB00669047 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B056DC41E07ABF400669047 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B056DC31E07ABF400669047 /* PayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,42 @@
 			remoteGlobalIDString = 8B056D5A1E07A43E00669047;
 			remoteInfo = PayUFinal;
 		};
+		8B056DB71E07A8AB00669047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B056DB21E07A8AB00669047 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE45519693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
+		8B056DB91E07A8AB00669047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B056DB21E07A8AB00669047 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE46019693E190098E6F3;
+			remoteInfo = Tests;
+		};
+		8B056DBE1E07A8CB00669047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B056DB21E07A8AB00669047 /* CryptoSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 754BE45419693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B056DC01E07A8CB00669047 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8B056DBD1E07A8CB00669047 /* CryptoSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8B056D5B1E07A43E00669047 /* PayUFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayUFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +85,8 @@
 		8B056D7A1E07A43E00669047 /* PayUFinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayUFinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B056D7E1E07A43E00669047 /* PayUFinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayUFinalUITests.swift; sourceTree = "<group>"; };
 		8B056D801E07A43E00669047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B056DB21E07A8AB00669047 /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = "../../Desktop/CryptoSwift-master/CryptoSwift.xcodeproj"; sourceTree = "<group>"; };
+		8B056DC31E07ABF400669047 /* PayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayViewController.swift; path = ../PayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B056DBC1E07A8CB00669047 /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +118,7 @@
 		8B056D521E07A43E00669047 = {
 			isa = PBXGroup;
 			children = (
+				8B056DB21E07A8AB00669047 /* CryptoSwift.xcodeproj */,
 				8B056D5D1E07A43E00669047 /* PayUFinal */,
 				8B056D721E07A43E00669047 /* PayUFinalTests */,
 				8B056D7D1E07A43E00669047 /* PayUFinalUITests */,
@@ -97,6 +139,7 @@
 		8B056D5D1E07A43E00669047 /* PayUFinal */ = {
 			isa = PBXGroup;
 			children = (
+				8B056DC31E07ABF400669047 /* PayViewController.swift */,
 				8B056D5E1E07A43E00669047 /* AppDelegate.swift */,
 				8B056D601E07A43E00669047 /* ViewController.swift */,
 				8B056D621E07A43E00669047 /* Main.storyboard */,
@@ -125,6 +168,15 @@
 			path = PayUFinalUITests;
 			sourceTree = "<group>";
 		};
+		8B056DB31E07A8AB00669047 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B056DB81E07A8AB00669047 /* CryptoSwift.framework */,
+				8B056DBA1E07A8AB00669047 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +187,12 @@
 				8B056D571E07A43E00669047 /* Sources */,
 				8B056D581E07A43E00669047 /* Frameworks */,
 				8B056D591E07A43E00669047 /* Resources */,
+				8B056DC01E07A8CB00669047 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8B056DBF1E07A8CB00669047 /* PBXTargetDependency */,
 			);
 			name = PayUFinal;
 			productName = PayUFinal;
@@ -221,6 +275,12 @@
 			mainGroup = 8B056D521E07A43E00669047;
 			productRefGroup = 8B056D5C1E07A43E00669047 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8B056DB31E07A8AB00669047 /* Products */;
+					ProjectRef = 8B056DB21E07A8AB00669047 /* CryptoSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8B056D5A1E07A43E00669047 /* PayUFinal */,
@@ -229,6 +289,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8B056DB81E07A8AB00669047 /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = 8B056DB71E07A8AB00669047 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B056DBA1E07A8AB00669047 /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = 8B056DB91E07A8AB00669047 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8B056D591E07A43E00669047 /* Resources */ = {
@@ -263,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B056D611E07A43E00669047 /* ViewController.swift in Sources */,
+				8B056DC41E07ABF400669047 /* PayViewController.swift in Sources */,
 				8B056D5F1E07A43E00669047 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +373,11 @@
 			isa = PBXTargetDependency;
 			target = 8B056D5A1E07A43E00669047 /* PayUFinal */;
 			targetProxy = 8B056D7B1E07A43E00669047 /* PBXContainerItemProxy */;
+		};
+		8B056DBF1E07A8CB00669047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			targetProxy = 8B056DBE1E07A8CB00669047 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,10 +495,12 @@
 		8B056D841E07A43E00669047 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HMVM4SM8W5;
 				INFOPLIST_FILE = PayUFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = vmc.PayUFinal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -425,10 +510,12 @@
 		8B056D851E07A43E00669047 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HMVM4SM8W5;
 				INFOPLIST_FILE = PayUFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = vmc.PayUFinal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
